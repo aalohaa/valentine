@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Protest Strike", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thanks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uwu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.uwu-container .uwu-text p {
+    font-size: 40px;
+    color: rgb(234, 100, 122);
+    letter-spacing: 1px;
+}
+
+.thanks-container .thanks-text p {
+    font-size: 40px;
+    color: rgb(234, 100, 122);
+    letter-spacing: 1px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.gif img {
+    border-radius: 30px;
+    -webkit-animation: shadow 1s infinite ease-in-out alternate;
+}
+
+.container .question p {
+    font-size: 40px;
+    color: rgb(234, 100, 122);
+    letter-spacing: 1px;
+}
+
+.container .options a {
+    font-size: 20px;
+    color: rgb(234, 104, 126);
+    text-decoration: none;
+}
+
+.container .choice p {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.container .options .option {
+    background-color: pink;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.thanks-container .uwu-btn {
+    background-color: pink;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.thanks-container .uwu-btn:hover {
+    background-color: #231823;
+}
+
+.thanks-container .uwu-btn a {
+    font-size: 20px;
+    color: rgb(234, 104, 126);
+    text-decoration: none;
+}
+
+.container .options .option:hover {
+    background-color: #231823;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 15px 5px pink;
+    }
+
+    100% {
+        box-shadow: 0 0 15px 15px pink;
+    }
+}
+
+
+.playing {
+    background: rgba(0, 0, 0, 0.1);
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.playing__bar {
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    width: 30%;
+    height: 100%;
+    animation: up-and-down 1.3s ease infinite alternate;
+}
+
+.playing__bar1 {
+    height: 60%;
+}
+
+.playing__bar2 {
+    height: 30%;
+    animation-delay: -2.2s;
+}
+
+.playing__bar3 {
+    height: 75%;
+    animation-delay: -3.7s;
+}
+
+@keyframes up-and-down {
+    10% {
+        height: 30%;
+    }
+
+    30% {
+        height: 100%;
+    }
+
+    60% {
+        height: 50%;
+    }
+
+    80% {
+        height: 75%;
+    }
+
+    100% {
+        height: 60%;
+    }
+}
